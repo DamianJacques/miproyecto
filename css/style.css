@@ -23,6 +23,9 @@ header .logo {
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  animation-name: girando;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 .lista {
@@ -74,6 +77,9 @@ main {
   height: 450px;
   margin: 10px;
   border-radius: 10px;
+  animation-name: medioGiro;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 .delivery {
@@ -299,6 +305,33 @@ form {
   transition: all 0.3;
 }
 
+/* animaciones */
+
+@keyframes girando {
+  0% {
+    transform-rotate: 0deg;
+    transition: 0.5s;
+  }
+  25% {
+    transform-rotate: 90deg;
+    transition: 0.5s;
+  }
+  50% {
+    transform-rotate: 180deg;
+    transition: 0.5s;
+  }
+  75% {
+    transform-rotate: 270deg;
+    transition: 0.5s;
+  }
+  100% {
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
+}
+
+
+
 /* media query para tablet 1024px */
 
 @media screen and (max-width: 1024px) {
@@ -323,11 +356,11 @@ form {
     font-size: 25px;
   }
   /* delivery */
- 
-  .contenidodelivery{
-       color: white; 
-       text-shadow: 0.1em 0.1em black; 
-}
+
+  .contenidodelivery {
+    color: white;
+    text-shadow: 0.1em 0.1em black;
+  }
 
   /* media query para mobile 550px  */
 
