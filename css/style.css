@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+/* **************header*********** */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 25px;
+}
+
+.h {
+  width: 150px;
+  margin: 10px;
+}
+.logo img {
+  transition: all 0.3s;
+}
+.logo img:hover {
+  transform: scale(1.3);
+}
+
+.lista li a {
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px;
+}
+.lista li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ******main***** */
+
+main {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 15%;
+  height: 56vh;
+}
+
+.card {
+  width: 45%;
+  height: 450px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.delivery {
+  background-image: url(./img/cerveza-1920-2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.delivery p {
+  color: white;
+  padding: 20px 30px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em #222;
+}
+
+.delivery button {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 0 #e5e5e5;
+  background-color: #222;
+  color: #fff;
+  transition: all 0.3;
+}
+button:hover {
+  transform: translatey(2px);
+  box-shadow: 0 2px 0 #fff;
+}
+.estilos {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  background-image: url(./img/16497701494279.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.estilos li {
+  font-size: 30px;
+  list-style: none;
+  padding: 3px 30px;
+  text-shadow: 0.05em 0.05em #e5e5e5;
+}
+.estilos h3 {
+  font-size: 40px;
+  color: #e5e5e5;
+  text-shadow: 0.1em 0.1em #222;
+  padding: 3px 15px;
+}
+
+/* *****Footer***** */
+
+footer {
+  background-color: #222;
+  height: 250px;
+  display: grid;
+  align-content: space-around;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1ft);
+  grid-template-areas: "footer redes formFooter";
+}
+.redes {
+  grid-area: redes;
+  display: flex;
+}
+footer i {
+  grid-area: footer;
+  color: #fff;
+  padding: 15px;
+  font-size: 60px;
+}
+.formFooter {
+  grid-area: formFooter;
+  font-size: 20px;
+  color: white;
+}
+footer i:hover {
+  transform: translatey(2px);
+}
+
+.footer li {
+  font-size: 18px;
+  color: white;
+  list-style: none;
+  margin: 10px;
+}
+.footer li a {
+  display: grid;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  justify-content: center;
+  align-content: center;
+}
+/* *****historia****** */
+.mainHistoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./img/imagenHistoria2.jpg");
+  background-size: cover;
+  flex-direction: column;
+}
+.mainHistoria h2 {
+  font-size: 30px;
+  text-shadow: 0.1em 0.1em white;
+  color: black;
+}
+.mainHistoria p {
+  font-size: 20px;
+}
+/* ***estilos**** */
+.mainEstilos {
+  background-image: url("./img/imagenEstilos.jpg");
+  background-size: cover;
+}
+.nuestrosEstilos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nuestrosEstilos h3 {
+  color: #e5e5e5;
+  text-shadow: 0.1em 0.1em black;
+  font-size: 50px;
+  padding: 10px;
+}
+.nuestrosEstilos li {
+  font-size: 30px;
+  list-style: none;
+  padding: 10px;
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+.e1 {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 75%;
+}
+.e2 {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 75%;
+}
+.e3 {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 75%;
+}
+.e4 {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 75%;
+}
+.e5 {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 75%;
+}
+/******delivery*******/
+.mainDelivery {
+  background-image: url("../css/img/imagenDelivery.jpg");
+  background-size: cover;
+}
+.contenidodelivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenidodelivery h2 {
+  font-size: 50px;
+  padding: 10px;
+}
+.contenidodelivery h3 {
+  font-size: 30px;
+  padding: 5px;
+}
+.contenidodelivery h4 {
+  padding-bottom: 100px;
+}
+
+/******contacto****  */
+
+.mainContacto {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./img/imagenContacto2.JPG");
+  background-size: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#comentario {
+  background-color: white;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
+  cursor: default;
+}
+
+.enviar {
+  /* position: relative; */
+  /* top: 170px; */
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3;
+}
+
+/* media query para tablet 1024px */
+
+@media screen and (max-width: 1024px) {
+  /* INDEX */
+  .card {
+    height: 300px;
+  }
+  /*HISTORIA  */
+  .mainHistoria {
+    height: 70vh;
+  }
+  .mainHistoria p {
+    font-size: 15px;
+    padding: 15px;
+  }
+  /* ESTILOS */
+
+  .nuestrosEstilos h3 {
+    font-size: 30px;
+  }
+  .nuestrosEstilos li {
+    font-size: 25px;
+  }
+  /* delivery */
+ 
+  .contenidodelivery{
+       color: white; 
+       text-shadow: 0.1em 0.1em black; 
+}
+
+  /* media query para mobile 550px  */
+
+  @media screen and (max-width: 550px) {
+    /* INDEX */
+
+    /***** heather *****/
+    .lista {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    .lista li a {
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    /***** main *****/
+    .card {
+      height: 300px;
+    }
+
+    .delivery p {
+      font-size: 30px;
+    }
+    .estilos h3 {
+      font-size: 20px;
+    }
+    .estilos li {
+      font-size: 20px;
+    }
+    /**** footer *****/
+    footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1ft);
+      grid-template-rows: repeat(3, 1ft);
+      grid-template-areas:
+        "footer"
+        "redes"
+        "formFooter";
+      height: 50vh;
+    }
+    .redes {
+      display: flex;
+      flex-direction: row;
+    }
+    /*HISTORIA*/
+
+    .mainHistoria {
+      height: 100vh;
+    }
+    .mainHistoria p {
+      font-size: 15px;
+      padding: 15px;
+    }
+    /* ESTILOS */
+
+    .nuestrosEstilos h3 {
+      font-size: 40px;
+    }
+
+    /* CONTACTO */
+    .mainContacto {
+      flex-direction: column;
+      height: 80vh;
+    }
+    .nombreContacto {
+      margin: 20px;
+    }
+  }
+}
