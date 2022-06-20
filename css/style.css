@@ -80,7 +80,7 @@ main {
 }
 
 .delivery {
-  background-image: url(./img/cerveza-1920-2.jpg);
+  background-image: url(../img/cerveza-1920-2.jpg);
   background-size: cover;
   position: relative;
 }
@@ -115,7 +115,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  background-image: url(./img/16497701494279.jpg);
+  background-image: url(../img/16497701494279.jpg);
   background-size: cover;
   padding-top: 20px;
   font-weight: bold;
@@ -183,7 +183,7 @@ footer i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./img/imagenHistoria2.jpg");
+  background-image: url("../img/imagenHistoria2.jpg");
   background-size: cover;
   flex-direction: column;
 }
@@ -197,7 +197,7 @@ footer i:hover {
 }
 /* ***estilos**** */
 .mainEstilos {
-  background-image: url("./img/imagenEstilos.jpg");
+  background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
   background-size: cover;
 }
 .nuestrosEstilos {
@@ -218,6 +218,9 @@ footer i:hover {
   padding: 10px;
   font-family: "Anton", sans-serif;
   color: white;
+}
+.nuestrosEstilos li:hover{
+  transform: translatey(2px);
 }
 .e1 {
   background-color: darkgray;
@@ -251,7 +254,7 @@ footer i:hover {
 }
 /******delivery*******/
 .mainDelivery {
-  background-image: url("../css/img/imagenDelivery.jpg");
+  background-image: url("../img/la-cerveza-que-representa-a___9tzwwqYTQ_1256x620__1.webp");
   background-size: cover;
 }
 .contenidodelivery {
@@ -259,16 +262,18 @@ footer i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .contenidodelivery h2 {
   font-size: 50px;
   padding: 10px;
 }
 .contenidodelivery h3 {
-  font-size: 30px;
+  font-size: 40px;
   padding: 5px;
 }
 .contenidodelivery h4 {
+  font-size: 30px;
   padding-bottom: 100px;
 }
 
@@ -277,7 +282,7 @@ footer i:hover {
 .mainContacto {
   display: flex;
   justify-content: space-evenly;
-  background-image: url("./img/imagenContacto2.JPG");
+  background-image: url("../img/deliveryH.jpg");
   background-size: cover;
 }
 .nombreContacto{
