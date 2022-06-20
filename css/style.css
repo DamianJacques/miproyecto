@@ -219,7 +219,7 @@ footer i:hover {
   font-family: "Anton", sans-serif;
   color: white;
 }
-.nuestrosEstilos li:hover{
+.nuestrosEstilos li:hover {
   transform: translatey(2px);
 }
 .e1 {
@@ -262,7 +262,6 @@ footer i:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .contenidodelivery h2 {
   font-size: 50px;
@@ -285,14 +284,14 @@ footer i:hover {
   background-image: url("../img/deliveryH.jpg");
   background-size: cover;
 }
-.nombreContacto{
+.nombreContacto {
   margin: 10px;
 }
 .formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(3,3,3,0.6);
+  background-color: rgba(3, 3, 3, 0.6);
   border-radius: 10px;
   color: white;
 }
@@ -303,7 +302,7 @@ footer i:hover {
   width: 300px;
   height: 150px;
   cursor: default;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .enviar {
@@ -337,8 +336,6 @@ footer i:hover {
     transition: 0.5s;
   }
 }
-
-
 
 /* media query para tablet 1024px */
 
@@ -381,11 +378,7 @@ footer i:hover {
       flex-direction: column;
       list-style: none;
     }
-    .lista li a {
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-    }
+
     /***** main *****/
     .card {
       height: 300px;
@@ -437,6 +430,19 @@ footer i:hover {
     }
     .nombreContacto {
       margin: 20px;
+    }
+  }
+  /* meia query para mobile 425px */
+  @media screen and (max-width: 425px) {
+    /* historia */
+
+    .mainHistoria p {
+      font-size: 13px;
+      padding: 15px;
+    }
+    /* contacto */
+    .iframe{
+      margin: 10px;
     }
   }
 }
