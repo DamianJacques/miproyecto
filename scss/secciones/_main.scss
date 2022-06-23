@@ -1,0 +1,80 @@
+/* ******main***** */
+
+main {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 15%;
+    height: 56vh;
+  }
+  
+  .card {
+    width: 45%;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+    animation-name: medioGiro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+  
+  .delivery {
+    background-image: url(../img/cerveza-1920-2.jpg);
+    background-size: cover;
+    position: relative;
+  
+    p {
+      color: white;
+      padding: 20px 30px;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 0.1em 0.1em #222;
+    }
+  
+    button {
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+    }
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 #e5e5e5;
+    background-color: #222;
+    color: #fff;
+    transition: all 0.3;
+  
+    &:hover {
+      transform: translatey(2px);
+      box-shadow: 0 2px 0 #fff;
+    }
+  }
+  
+  .estilos {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    background-image: url(../img/16497701494279.jpg);
+    background-size: cover;
+    padding-top: 20px;
+    font-weight: bold;
+  
+    li {
+      font-size: 30px;
+      list-style: none;
+      padding: 3px 30px;
+      text-shadow: 0.05em 0.05em #e5e5e5;
+    }
+  
+    h3 {
+      font-size: 40px;
+      color: #e5e5e5;
+      text-shadow: 0.1em 0.1em #222;
+      padding: 3px 15px;
+    }
+  }

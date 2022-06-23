@@ -1,0 +1,21 @@
+
+/* *****historia****** */
+
+.mainHistoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/imagenHistoria2.jpg");
+    background-size: cover;
+    flex-direction: column;
+  
+    h2 {
+      font-size: 30px;
+      text-shadow: 0.1em 0.1em white;
+      color: black;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }

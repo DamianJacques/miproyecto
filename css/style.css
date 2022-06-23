@@ -1,13 +1,13 @@
+/* reset */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&family=Satisfy&display=swap");
-/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-}
+  font-size: 20px; }
+
 /* **************header*********** */
 header {
   display: flex;
@@ -15,16 +15,13 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #222;
-  color: white;
-}
-
-header .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-}
+  color: white; }
+  header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px; }
 
 .lista {
   display: flex;
@@ -32,34 +29,28 @@ header .logo {
   justify-content: center;
   align-items: center;
   list-style: none;
-  font-size: 25px;
-}
+  font-size: 25px; }
 
 .h {
   width: 150px;
-  margin: 10px;
-}
+  margin: 10px; }
+
 .logo img {
-  transition: all 0.3s;
-}
-.logo img:hover {
-  transform: scale(1.3);
-}
+  transition: all 0.3s; }
+  .logo img:hover {
+    transform: scale(1.3); }
 
 .lista li a {
   color: white;
   margin: 10px;
   cursor: pointer;
   text-decoration: none;
-  padding: 5px;
-}
-.lista li a:hover {
-  background-color: white;
-  color: black;
-}
+  padding: 5px; }
+  .lista li a:hover {
+    background-color: white;
+    color: black; }
 
 /* ******main***** */
-
 main {
   background-color: #e5e5e5;
   display: flex;
@@ -67,8 +58,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10% 15%;
-  height: 56vh;
-}
+  height: 56vh; }
 
 .card {
   width: 45%;
@@ -77,28 +67,23 @@ main {
   border-radius: 10px;
   animation-name: medioGiro;
   animation-duration: 3s;
-  animation-iteration-count: 1;
-}
+  animation-iteration-count: 1; }
 
 .delivery {
   background-image: url(../img/cerveza-1920-2.jpg);
   background-size: cover;
-  position: relative;
-}
+  position: relative; }
+  .delivery p {
+    color: white;
+    padding: 20px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em #222; }
+  .delivery button {
+    position: absolute;
+    bottom: 15px;
+    left: 10px; }
 
-.delivery p {
-  color: white;
-  padding: 20px 30px;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: 0.1em 0.1em #222;
-}
-
-.delivery button {
-  position: absolute;
-  bottom: 15px;
-  left: 10px;
-}
 button {
   padding: 10px;
   border: none;
@@ -106,12 +91,11 @@ button {
   box-shadow: 0 4px 0 #e5e5e5;
   background-color: #222;
   color: #fff;
-  transition: all 0.3;
-}
-button:hover {
-  transform: translatey(2px);
-  box-shadow: 0 2px 0 #fff;
-}
+  transition: all 0.3; }
+  button:hover {
+    transform: translatey(2px);
+    box-shadow: 0 2px 0 #fff; }
+
 .estilos {
   display: flex;
   flex-direction: column;
@@ -119,23 +103,19 @@ button:hover {
   background-image: url(../img/16497701494279.jpg);
   background-size: cover;
   padding-top: 20px;
-  font-weight: bold;
-}
-.estilos li {
-  font-size: 30px;
-  list-style: none;
-  padding: 3px 30px;
-  text-shadow: 0.05em 0.05em #e5e5e5;
-}
-.estilos h3 {
-  font-size: 40px;
-  color: #e5e5e5;
-  text-shadow: 0.1em 0.1em #222;
-  padding: 3px 15px;
-}
+  font-weight: bold; }
+  .estilos li {
+    font-size: 30px;
+    list-style: none;
+    padding: 3px 30px;
+    text-shadow: 0.05em 0.05em #e5e5e5; }
+  .estilos h3 {
+    font-size: 40px;
+    color: #e5e5e5;
+    text-shadow: 0.1em 0.1em #222;
+    padding: 3px 15px; }
 
 /* *****Footer***** */
-
 footer {
   background-color: #222;
   height: 250px;
@@ -143,33 +123,32 @@ footer {
   align-content: space-around;
   justify-content: space-around;
   grid-template-columns: repeat(3, 1ft);
-  grid-template-areas: "footer redes formFooter";
-}
+  grid-template-areas: "footer redes formFooter"; }
+
 .redes {
   grid-area: redes;
-  display: flex;
-}
+  display: flex; }
+
 footer i {
   grid-area: footer;
   color: #fff;
   padding: 15px;
-  font-size: 60px;
-}
+  font-size: 60px; }
+
 .formFooter {
   grid-area: formFooter;
   font-size: 20px;
-  color: white;
-}
+  color: white; }
+
 footer i:hover {
-  transform: translatey(2px);
-}
+  transform: translatey(2px); }
 
 .footer li {
   font-size: 18px;
   color: white;
   list-style: none;
-  margin: 10px;
-}
+  margin: 10px; }
+
 .footer li a {
   display: grid;
   font-size: 18px;
@@ -177,8 +156,8 @@ footer i:hover {
   text-decoration: none;
   margin: 10px;
   justify-content: center;
-  align-content: center;
-}
+  align-content: center; }
+
 /* *****historia****** */
 .mainHistoria {
   display: flex;
@@ -186,116 +165,81 @@ footer i:hover {
   justify-content: center;
   background-image: url("../img/imagenHistoria2.jpg");
   background-size: cover;
-  flex-direction: column;
-}
-.mainHistoria h2 {
-  font-size: 30px;
-  text-shadow: 0.1em 0.1em white;
-  color: black;
-}
-.mainHistoria p {
-  font-size: 20px;
-}
+  flex-direction: column; }
+  .mainHistoria h2 {
+    font-size: 30px;
+    text-shadow: 0.1em 0.1em white;
+    color: black; }
+  .mainHistoria p {
+    font-size: 20px; }
+
 /* ***estilos**** */
 .mainEstilos {
   background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
-  background-size: cover;
-}
+  background-size: cover; }
+
 .nuestrosEstilos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.nuestrosEstilos h3 {
-  color: #e5e5e5;
-  text-shadow: 0.1em 0.1em black;
-  font-size: 50px;
-  padding: 10px;
-}
-.nuestrosEstilos li {
-  font-size: 30px;
-  list-style: none;
-  padding: 10px;
-  font-family: "Anton", sans-serif;
-  color: white;
-}
-.nuestrosEstilos li:hover {
-  transform: translatey(2px);
-}
-.e1 {
+  align-items: center; }
+  .nuestrosEstilos h3 {
+    color: #e5e5e5;
+    text-shadow: 0.1em 0.1em black;
+    font-size: 50px;
+    padding: 10px; }
+  .nuestrosEstilos li {
+    font-size: 30px;
+    list-style: none;
+    padding: 10px;
+    font-family: "Anton", sans-serif;
+    color: white; }
+    .nuestrosEstilos li:hover {
+      transform: translatey(2px); }
+
+.e1, .e2, .e3, .e4, .e5 {
   background-color: darkgray;
   border-radius: 10px;
   margin: 5px;
-  opacity: 75%;
-}
-.e2 {
-  background-color: darkgray;
-  border-radius: 10px;
-  margin: 5px;
-  opacity: 75%;
-}
-.e3 {
-  background-color: darkgray;
-  border-radius: 10px;
-  margin: 5px;
-  opacity: 75%;
-}
-.e4 {
-  background-color: darkgray;
-  border-radius: 10px;
-  margin: 5px;
-  opacity: 75%;
-}
-.e5 {
-  background-color: darkgray;
-  border-radius: 10px;
-  margin: 5px;
-  opacity: 75%;
-}
+  opacity: 75%; }
+
 /******delivery*******/
 .mainDelivery {
   background-image: url("../img/la-cerveza-que-representa-a___9tzwwqYTQ_1256x620__1.webp");
-  background-size: cover;
-}
+  background-size: cover; }
+
 .contenidodelivery {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.contenidodelivery h2 {
-  font-size: 50px;
-  padding: 10px;
-}
-.contenidodelivery h3 {
-  font-size: 40px;
-  padding: 5px;
-}
-.contenidodelivery h4 {
-  font-size: 30px;
-  padding-bottom: 100px;
-}
+  align-items: center; }
+  .contenidodelivery h2 {
+    font-size: 50px;
+    padding: 10px; }
+  .contenidodelivery h3 {
+    font-size: 40px;
+    padding: 5px; }
+  .contenidodelivery h4 {
+    font-size: 30px;
+    padding-bottom: 100px; }
 
 /******contacto****  */
-
 .mainContacto {
   display: flex;
   justify-content: space-evenly;
   background-image: url("../img/deliveryH.jpg");
-  background-size: cover;
-}
+  background-size: cover; }
+
 .nombreContacto {
-  margin: 10px;
-}
+  margin: 10px; }
+
 .formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(3, 3, 3, 0.6);
   border-radius: 10px;
-  color: white;
-}
+  color: white; }
 
 #comentario {
   background-color: white;
@@ -303,147 +247,10 @@ footer i:hover {
   width: 300px;
   height: 150px;
   cursor: default;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .enviar {
   border-radius: 10px;
   border: none;
   transition: all 0.3;
-  margin: 15px;
-}
-
-/* animaciones */
-
-@keyframes girando {
-  0% {
-    transform-rotate: 0deg;
-    transition: 0.5s;
-  }
-  25% {
-    transform-rotate: 90deg;
-    transition: 0.5s;
-  }
-  50% {
-    transform-rotate: 180deg;
-    transition: 0.5s;
-  }
-  75% {
-    transform-rotate: 270deg;
-    transition: 0.5s;
-  }
-  100% {
-    transform: rotate(360deg);
-    transition: 0.5s;
-  }
-}
-
-/* media query para tablet 1024px */
-
-@media screen and (max-width: 1024px) {
-  /* INDEX */
-  .card {
-    height: 300px;
-  }
-  /*HISTORIA  */
-  .mainHistoria {
-    height: 70vh;
-  }
-  .mainHistoria p {
-    font-size: 15px;
-    padding: 15px;
-  }
-  /* ESTILOS */
-
-  .nuestrosEstilos h3 {
-    font-size: 30px;
-  }
-  .nuestrosEstilos li {
-    font-size: 25px;
-  }
-  /* delivery */
-
-  .contenidodelivery {
-    color: white;
-    text-shadow: 0.1em 0.1em black;
-  }
-
-  /* media query para mobile 550px  */
-
-  @media screen and (max-width: 550px) {
-    /* INDEX */
-
-    /***** heather *****/
-    .lista {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-    }
-
-    /***** main *****/
-    .card {
-      height: 300px;
-    }
-
-    .delivery p {
-      font-size: 30px;
-    }
-    .estilos h3 {
-      font-size: 20px;
-    }
-    .estilos li {
-      font-size: 20px;
-    }
-    /**** footer *****/
-    footer {
-      display: grid;
-      grid-template-columns: repeat(1, 1ft);
-      grid-template-rows: repeat(3, 1ft);
-      grid-template-areas:
-        "footer"
-        "redes"
-        "formFooter";
-      height: 50vh;
-    }
-    .redes {
-      display: flex;
-      flex-direction: row;
-    }
-    /*HISTORIA*/
-
-    .mainHistoria {
-      height: 100vh;
-    }
-    .mainHistoria p {
-      font-size: 15px;
-      padding: 15px;
-    }
-    /* ESTILOS */
-
-    .nuestrosEstilos h3 {
-      font-size: 40px;
-    }
-
-    /* CONTACTO */
-    .mainContacto {
-      flex-direction: column;
-      height: 80vh;
-    }
-    .nombreContacto {
-      margin: 20px;
-    }
-  }
-  /* meia query para mobile 425px */
-  @media screen and (max-width: 425px) {
-    /* historia */
-
-    .mainHistoria p {
-      font-size: 13px;
-      padding: 15px;
-    }
-    /* contacto */
-    .iframe{
-      margin: 10px;
-    }
-  }
-}
+  margin: 15px; }

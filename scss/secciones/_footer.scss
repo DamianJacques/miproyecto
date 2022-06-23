@@ -1,0 +1,46 @@
+
+/* *****Footer***** */
+
+footer {
+    background-color: #222;
+    height: 250px;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1ft);
+    grid-template-areas: "footer redes formFooter";
+  }
+  .redes {
+    grid-area: redes;
+    display: flex;
+  }
+  footer i {
+    grid-area: footer;
+    color: #fff;
+    padding: 15px;
+    font-size: 60px;
+  }
+  .formFooter {
+    grid-area: formFooter;
+    font-size: 20px;
+    color: white;
+  }
+  footer i:hover {
+    transform: translatey(2px);
+  }
+  
+  .footer li {
+    font-size: 18px;
+    color: white;
+    list-style: none;
+    margin: 10px;
+  }
+  .footer li a {
+    display: grid;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
