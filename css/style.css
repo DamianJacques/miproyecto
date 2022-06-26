@@ -8,6 +8,9 @@
   font-family: "Roboto", sans-serif;
   font-size: 20px; }
 
+button:hover, footer i:hover, .nuestrosEstilos li:hover {
+  transform: translateY(2px); }
+
 /* **************header*********** */
 header {
   display: flex;
@@ -93,7 +96,6 @@ button {
   color: #fff;
   transition: all 0.3; }
   button:hover {
-    transform: translatey(2px);
     box-shadow: 0 2px 0 #fff; }
 
 .estilos {
@@ -139,9 +141,6 @@ footer i {
   grid-area: formFooter;
   font-size: 20px;
   color: white; }
-
-footer i:hover {
-  transform: translatey(2px); }
 
 .footer li {
   font-size: 18px;
@@ -194,8 +193,6 @@ footer i:hover {
     padding: 10px;
     font-family: "Anton", sans-serif;
     color: white; }
-    .nuestrosEstilos li:hover {
-      transform: translatey(2px); }
 
 .e1, .e2, .e3, .e4, .e5 {
   background-color: darkgray;
@@ -254,3 +251,97 @@ footer i:hover {
   border: none;
   transition: all 0.3;
   margin: 15px; }
+
+@media screen and (max-width: 1024px) {
+  /* INDEX */
+  .card {
+    height: 300px; }
+  /*HISTORIA  */
+  .mainHistoria {
+    height: 70vh; }
+    .mainHistoria p {
+      font-size: 15px;
+      padding: 15px; }
+  /* ESTILOS */
+  .nuestrosEstilos h3 {
+    font-size: 30px; }
+  .nuestrosEstilos li {
+    font-size: 25px; }
+  /* delivery */
+  .contenidodelivery {
+    color: white;
+    text-shadow: 0.1em 0.1em black; } }
+
+/* media query para monitor 1440px */
+@media screen and (max-width: 1440px) {
+  /* INDEX */
+  .card {
+    height: 300px; }
+  /*HISTORIA  */
+  .mainHistoria {
+    height: 70vh; }
+    .mainHistoria p {
+      font-size: 15px;
+      padding: 15px; }
+  /* ESTILOS */
+  .nuestrosEstilos h3 {
+    font-size: 30px; }
+  .nuestrosEstilos li {
+    font-size: 25px; }
+  /* delivery */
+  .contenidodelivery {
+    color: white;
+    text-shadow: 0.1em 0.1em black; }
+  /* media query para mobile 550px  */ }
+
+@media screen and (max-width: 1440px) and (max-width: 550px) {
+  /* INDEX */
+  /***** heather *****/
+  .lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+  /***** main *****/
+  .card {
+    height: 300px; }
+  .delivery p {
+    font-size: 30px; }
+  .estilos h3, .estilos li {
+    font-size: 20px; }
+  /**** footer *****/
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1ft);
+    grid-template-rows: repeat(3, 1ft);
+    grid-template-areas: "footer" "redes" "formFooter";
+    height: 50vh; }
+  .redes {
+    display: flex;
+    flex-direction: row; }
+  /*HISTORIA*/
+  .mainHistoria {
+    height: 100vh; }
+    .mainHistoria p {
+      font-size: 15px;
+      padding: 15px; }
+  /* ESTILOS */
+  .nuestrosEstilos h3 {
+    font-size: 40px; }
+  /* CONTACTO */
+  .mainContacto {
+    flex-direction: column;
+    height: 80vh; }
+  .nombreContacto {
+    margin: 20px; } }
+
+@media screen and (max-width: 1440px) {
+  /* meia query para mobile 425px */ }
+
+@media screen and (max-width: 1440px) and (max-width: 425px) {
+  /* historia */
+  .mainHistoria p {
+    font-size: 13px;
+    padding: 15px; }
+  /* contacto */
+  .iframe {
+    margin: 10px; } }

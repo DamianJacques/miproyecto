@@ -30,8 +30,7 @@ header {
   }
   
   .h {
-    width: 150px;
-    margin: 10px;
+    @include estilo-img (150px, 10px);
   }
   
   .logo img {

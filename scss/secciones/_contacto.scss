@@ -36,3 +36,42 @@
     transition: all 0.3;
     margin: 15px;
   }
+  // media query para monitor 1440px
+  @media screen and (max-width: 1024px) {
+    /* INDEX */
+  
+    .card {
+      height: 300px;
+    }
+  
+    /*HISTORIA  */
+  
+    .mainHistoria {
+      height: 70vh;
+  
+      p {
+        font-size: 15px;
+        padding: 15px;
+      }
+    }
+  
+    /* ESTILOS */
+  
+    .nuestrosEstilos {
+      h3 {
+        font-size: 30px;
+      }
+  
+      li {
+        font-size: 25px;
+      }
+    }
+  
+    /* delivery */
+  
+    .contenidodelivery {
+      color: white;
+      text-shadow: 0.1em 0.1em black;
+    }
+  }
+  

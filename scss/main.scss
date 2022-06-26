@@ -6,6 +6,14 @@
     font-family: "Roboto", sans-serif;
     font-size: 20px;
 }
+// variables
+
+@import './variables/mixins';
+@import './variables/extend';
+@import './variables/tamanios';
+
+// secciones
+
 @import './secciones/heather';
 @import './secciones/main';
 @import './secciones/footer';
@@ -13,5 +21,134 @@
 @import './secciones/estilos';
 @import './secciones/delivery';
 @import './secciones/contacto';
+
+/* media query para monitor 1440px */
+
+@media screen and (max-width: $monitor)  {
+    /* INDEX */
+  
+    .card {
+      height: 300px;
+    }
+  
+    /*HISTORIA  */
+  
+    .mainHistoria {
+      height: 70vh;
+  
+      p {
+        font-size: 15px;
+        padding: 15px;
+      }
+    }
+  
+    /* ESTILOS */
+  
+    .nuestrosEstilos {
+      h3 {
+        font-size: 30px;
+      }
+  
+      li {
+        font-size: 25px;
+      }
+    }
+  
+    /* delivery */
+  
+    .contenidodelivery {
+      color: white;
+      text-shadow: 0.1em 0.1em black;
+    }
+  
+    /* media query para mobile 550px  */
+  
+    @media screen and (max-width: $mobileGrande) {
+      /* INDEX */
+  
+      /***** heather *****/
+  
+      .lista {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+      }
+  
+      /***** main *****/
+  
+      .card {
+        height: 300px;
+      }
+  
+      .delivery p {
+        font-size: 30px;
+      }
+  
+      .estilos {
+        h3, li {
+          font-size: 20px;
+        }
+      }
+  
+      /**** footer *****/
+  
+      footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1ft);
+        grid-template-rows: repeat(3, 1ft);
+        grid-template-areas: "footer" "redes" "formFooter";
+        height: 50vh;
+      }
+  
+      .redes {
+        display: flex;
+        flex-direction: row;
+      }
+  
+      /*HISTORIA*/
+  
+      .mainHistoria {
+        height: 100vh;
+  
+        p {
+          font-size: 15px;
+          padding: 15px;
+        }
+      }
+  
+      /* ESTILOS */
+  
+      .nuestrosEstilos h3 {
+        font-size: 40px;
+      }
+  
+      /* CONTACTO */
+  
+      .mainContacto {
+        flex-direction: column;
+        height: 80vh;
+      }
+  
+      .nombreContacto {
+        margin: 20px;
+      }
+    }
+  
+    /* meia query para mobile 425px */
+    @media screen and (max-width: $mobileChico) {
+      /* historia */
+  
+      .mainHistoria p {
+        font-size: 13px;
+        padding: 15px;
+      }
+  
+      /* contacto */
+  
+      .iframe {
+        margin: 10px;
+      }
+    }
+  }
 
 

@@ -26,7 +26,7 @@ footer {
     color: white;
   }
   footer i:hover {
-    transform: translatey(2px);
+    @extend %hover;
   }
   
   .footer li {
