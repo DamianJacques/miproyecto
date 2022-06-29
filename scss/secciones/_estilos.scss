@@ -1,40 +1,102 @@
-
 /* ***estilos**** */
+.tituloEstilos {
+  color: #e5e5e5;
+  text-shadow: 0.1em 0.1em black;
+  font-size: 50px;
+  padding: 10px;
+  position: absolute;
+  top: 20vh;
+}
 
 .mainEstilos {
-    background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
-    background-size: cover;
-  }
-  
-  .nuestrosEstilos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    h3 {
-      color: #e5e5e5;
-      text-shadow: 0.1em 0.1em black;
-      font-size: 50px;
-      padding: 10px;
-    }
-  
-    li {
-      font-size: 30px;
-      list-style: none;
-      padding: 10px;
-      font-family: "Anton", sans-serif;
-      color: white;
-  
-      &:hover {
-        @extend %hover;
-      }
-    }
-  }
-  
-  .e1, .e2, .e3, .e4, .e5 {
-    background-color: darkgray;
-    border-radius: 10px;
-    margin: 5px;
-    opacity: 75%;
-  }
+  background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
+  background-size: cover;
+}
+
+.nuestrosEstilos {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e5e5e5;
+  text-shadow: 0.1em 0.1em black;
+
+
+
+
+  // li {
+  // font-size: 30px;
+  // list-style: none;
+  // padding: 10px;
+  // font-family: "Anton", sans-serif;
+  // color: white;
+
+  // &:hover {
+  // @extend %hover;
+  // }
+  // }
+}
+
+// .e1, .e2, .e3, .e4, .e5 {
+//   background-color: darkgray;
+//   border-radius: 10px;
+//   margin: 5px;
+//   opacity: 75%;
+// }
+.infoEstilo {
+  display: none;
+  margin: 30px;
+  color: white;
+  text-shadow: 0.1em 0.1em black;
+}
+
+.cardDorada {
+  background-image: url("/img/Dorada.png");
+  @extend %cardsEstilos;
+}
+
+section:hover .infoEstilo {
+  display: block;
+ 
+}
+
+.cardGolden {
+  background-image: url("/img/golden.png");
+  @extend %cardsEstilos;
+  background-size: 80%;
+}
+
+.cardBelgian {
+  background-image: url("/img/belgian.png");
+  @extend %cardsEstilos;
+  background-size: 220%;
+}
+
+.cardIrish {
+  background-image: url("/img/irish2.png");
+  @extend %cardsEstilos;
+}
+
+.cardApa {
+  background-image: url("/img/apa2.png");
+  @extend %cardsEstilos;
+  background-size: 70%;
+}
+
+.cardIpa {
+  background-image: url("/img/ipa2.png");
+  @extend %cardsEstilos;
+  background-size: 130%;
+}
+
+.cardDubbel {
+  background-image: url("/img/dubbel2.png");
+  @extend %cardsEstilos;
+  background-size: 200%;
+}
+
+.cardImperial {
+  background-image: url("/img/stout2.png");
+  @extend %cardsEstilos;
+  background-size: 70%;
+}
