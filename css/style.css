@@ -222,36 +222,36 @@ video {
   text-shadow: 0.1em 0.1em black; }
 
 .cardDorada {
-  background-image: url("/img/Dorada.png"); }
+  background-image: url("../img/Dorada.png"); }
 
 section:hover .infoEstilo {
   display: block; }
 
 .cardGolden {
-  background-image: url("/img/golden.png");
+  background-image: url("../img/golden.png");
   background-size: 80%; }
 
 .cardBelgian {
-  background-image: url("/img/belgian.png");
+  background-image: url("../img/belgian.png");
   background-size: 220%; }
 
 .cardIrish {
-  background-image: url("/img/irish2.png"); }
+  background-image: url("../img/irish.png"); }
 
 .cardApa {
-  background-image: url("/img/apa2.png");
+  background-image: url("../img/apa.png");
   background-size: 70%; }
 
 .cardIpa {
-  background-image: url("/img/ipa2.png");
+  background-image: url("../img/ipa.png");
   background-size: 130%; }
 
 .cardDubbel {
-  background-image: url("/img/dubbel2.png");
+  background-image: url("../img/dubbel.png");
   background-size: 200%; }
 
 .cardImperial {
-  background-image: url("/img/stout2.png");
+  background-image: url("../img/stout.png");
   background-size: 70%; }
 
 /******delivery*******/
