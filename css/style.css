@@ -169,8 +169,6 @@ footer i {
 
 /* *****historia****** */
 .mainHistoria {
-  background-image: url("/img/Beer - 29506.mp4");
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,6 +312,8 @@ section:hover .infoEstilo {
   /*HISTORIA  */
   .mainHistoria {
     height: 70vh; }
+    .mainHistoria h2 {
+      font-size: 30px; }
     .mainHistoria p {
       font-size: 15px;
       padding: 15px; }
