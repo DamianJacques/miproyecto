@@ -1,0 +1,24 @@
+1- Modifique el title en todos los html, poniendo por delante el nombre de la marca y luego la seccion
+
+Historia/Cerveza h - Historia
+Estilos/Cerveza H - Estilos
+Delivery/Cerveza H - Delivery
+Contacto/Cerveza H - Contacto
+
+2- Implemente meta keywords en todos los html
+
+Index= "cerveza, cerveceria, malta, cervezah, pinta, artesanal, birra"
+Historia= "cerveza, historia, artesanal, casera"
+Estilos= "cerveza, estilos, ipa, golden, stout, irish, apa"
+Delivery= "cerveza, entrega, pedido, sin cargo, delivery"
+Contacto= "contacto, ubicacion, email, llego"
+
+3- Agregue meta description a todos los html
+
+Index= "Cerevza H es artesanal y hecha por la mano del hombre, contamos con varios estilos para que puedas degustar"
+Historia= "Cerveza H nacio en Isidro Casanova Hace 6 años y es el sueño de Matias Galeano su creador"
+Estilos= "Cerveza H cuenta con variedad de estilos, desde cervezas rubias y ligeras hasta cervezas negras y con alta graduacion"
+Delivery= "Contamos con entrega sin cargo, solo hace tu pedido y te lo llevamos a tu casa "
+Contacto= "Comunicate con nosotros y te contamos sobre nuestra cerveza y los estilos que hacemos, visita nuestras redes y seguinos"
+
+4- Se respeta la estructura de carpeta pages con los html excepto el index
