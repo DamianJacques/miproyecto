@@ -214,7 +214,7 @@ section:hover .infoEstilo {
   display: block; }
 
 .cardDorada {
-  background-image: url("../img/dorada.png"); }
+  background-image: url("../img/Dorada.png"); }
 
 .cardGolden {
   background-image: url("../img/golden.png");
@@ -352,7 +352,16 @@ section:hover .infoEstilo {
   /*HISTORIA*/
   .parrafoHistoria {
     font-size: 15px;
-    padding: 15px; }
+    padding: 15px;
+    width: 80%; }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vh;
+    height: 30vh;
+    object-fit: cover;
+    z-index: -1; }
   /* ESTILOS */
   .nuestrosEstilos {
     height: 100%; }
