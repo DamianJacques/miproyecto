@@ -28,20 +28,18 @@
     /* INDEX */
   
     .card {
-      height: 300px;
+      height: 400px;
     }
   
     /*HISTORIA  */
   
     .mainHistoria {
-      height: 70vh;
-
       h2{
-        font-size: 30px;
+        font-size: 40px;
       }
   
       p {
-        font-size: 15px;
+        font-size: 25px;
         padding: 15px;
       }
     }
@@ -49,11 +47,7 @@
     /* ESTILOS */
   
     .nuestrosEstilos {
-      h3 {
-        font-size: 30px;
-      }
-  
-      li {
+    li {
         font-size: 25px;
       }
     }
@@ -71,6 +65,9 @@
       /* INDEX */
   
       /***** heather *****/
+      .d-flex{
+        flex-direction: column;
+      }
   
       .lista {
         display: flex;
@@ -79,6 +76,9 @@
       }
   
       /***** main *****/
+      .mainInicio{
+         height: 100%;
+      }
   
       .card {
         height: 300px;
@@ -112,8 +112,6 @@
       /*HISTORIA*/
   
       .mainHistoria {
-        height: 100vh;
-  
         p {
           font-size: 15px;
           padding: 15px;
@@ -122,35 +120,40 @@
   
       /* ESTILOS */
   
-      .nuestrosEstilos h3 {
-        font-size: 40px;
+      .nuestrosEstilos {
+        height: 100%;
       }
   
       /* CONTACTO */
-  
-      .mainContacto {
-        flex-direction: column;
-        height: 80vh;
+      .iframe {
+        margin: 15px;
       }
-  
-      .nombreContacto {
-        margin: 20px;
-      }
+     
     }
   
     /* meia query para mobile 425px */
     @media screen and (max-width: $mobileChico) {
+
+      /* main */ 
+      .mainInicio{
+        height: 100%;
+      }
+
       /* historia */
   
       .mainHistoria p {
         font-size: 13px;
         padding: 15px;
       }
+    /* ESTILOS */
   
+    .nuestrosEstilos {
+      height: 100%;
+    }
       /* contacto */
   
       .iframe {
-        margin: 10px;
+        margin: 15px;
       }
     }
   }

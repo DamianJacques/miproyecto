@@ -53,29 +53,21 @@ header {
   .logo img:hover {
     transform: scale(1.2); }
 
-.lista li a {
-  color: white;
-  margin: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 5px; }
-  .lista li a:hover {
-    background-color: white;
-    color: black; }
+.nav-item a:hover {
+  background-color: gray;
+  color: black;
+  border-radius: 10px; }
 
 /* ******main***** */
-main {
-  background-color: #e5e5e5;
+.mainInicio {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10% 15%;
-  height: 56vh; }
+  height: 100%; }
 
 .card {
   width: 45%;
-  height: 450px;
+  height: 500px;
   margin: 10px;
   border-radius: 10px;
   animation-name: medioGiro;
@@ -174,15 +166,20 @@ footer i {
   justify-content: center;
   flex-direction: column;
   z-index: 100;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  gap: 20px; }
 
-h2 {
+.historia {
   font-size: 50px;
-  color: white; }
+  color: white;
+  text-shadow: 0.1em 0.1em black; }
 
-p {
-  font-size: 20px;
-  color: white; }
+.parrafoHistoria {
+  font-size: 25px;
+  color: #ccc8c8;
+  text-shadow: 0.1em 0.1em black;
+  width: 40%; }
 
 video {
   position: absolute;
@@ -193,15 +190,6 @@ video {
   object-fit: cover;
   z-index: -1; }
 
-/* ***estilos**** */
-.tituloEstilos {
-  color: #e5e5e5;
-  text-shadow: 0.1em 0.1em black;
-  font-size: 50px;
-  padding: 10px;
-  position: absolute;
-  top: 20vh; }
-
 .mainEstilos {
   background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
   background-size: cover; }
@@ -210,20 +198,23 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: #e5e5e5;
-  text-shadow: 0.1em 0.1em black; }
+  text-shadow: 0.1em 0.1em black;
+  width: 100%;
+  height: 56vh; }
 
 .infoEstilo {
   display: none;
-  margin: 30px;
+  margin: 20px;
   color: white;
   text-shadow: 0.1em 0.1em black; }
 
-.cardDorada {
-  background-image: url("../img/Dorada.png"); }
-
 section:hover .infoEstilo {
   display: block; }
+
+.cardDorada {
+  background-image: url("../img/dorada.png"); }
 
 .cardGolden {
   background-image: url("../img/golden.png");
@@ -255,29 +246,42 @@ section:hover .infoEstilo {
 /******delivery*******/
 .mainDelivery {
   background-image: url("../img/la-cerveza-que-representa-a___9tzwwqYTQ_1256x620__1.webp");
-  background-size: cover; }
+  background-size: cover;
+  height: 56vh; }
 
 .contenidodelivery {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .contenidodelivery h2 {
+  .contenidodelivery .tituloDelivery {
     font-size: 50px;
-    padding: 10px; }
-  .contenidodelivery h3 {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0.05em 0.05em black; }
+  .contenidodelivery .tituloEntrega {
     font-size: 40px;
-    padding: 5px; }
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0.05em 0.05em white; }
   .contenidodelivery h4 {
     font-size: 30px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0.05em 0.05em white; }
 
 /******contacto****  */
 .mainContacto {
   display: flex;
   justify-content: space-evenly;
   background-image: url("../img/deliveryH.jpg");
-  background-size: cover; }
+  background-size: cover;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center; }
 
 .nombreContacto {
   margin: 10px; }
@@ -288,7 +292,8 @@ section:hover .infoEstilo {
   align-items: center;
   background-color: rgba(3, 3, 3, 0.6);
   border-radius: 10px;
-  color: white; }
+  color: white;
+  margin: 15px; }
 
 #comentario {
   background-color: white;
@@ -308,18 +313,14 @@ section:hover .infoEstilo {
 @media screen and (max-width: 1440px) {
   /* INDEX */
   .card {
-    height: 300px; }
+    height: 400px; }
   /*HISTORIA  */
-  .mainHistoria {
-    height: 70vh; }
-    .mainHistoria h2 {
-      font-size: 30px; }
-    .mainHistoria p {
-      font-size: 15px;
-      padding: 15px; }
+  .mainHistoria h2 {
+    font-size: 40px; }
+  .mainHistoria p {
+    font-size: 25px;
+    padding: 15px; }
   /* ESTILOS */
-  .nuestrosEstilos h3 {
-    font-size: 30px; }
   .nuestrosEstilos li {
     font-size: 25px; }
   /* delivery */
@@ -331,11 +332,15 @@ section:hover .infoEstilo {
 @media screen and (max-width: 1440px) and (max-width: 550px) {
   /* INDEX */
   /***** heather *****/
+  .d-flex {
+    flex-direction: column; }
   .lista {
     display: flex;
     flex-direction: column;
     list-style: none; }
   /***** main *****/
+  .mainInicio {
+    height: 100%; }
   .card {
     height: 300px; }
   .delivery p {
@@ -353,29 +358,30 @@ section:hover .infoEstilo {
     display: flex;
     flex-direction: row; }
   /*HISTORIA*/
-  .mainHistoria {
-    height: 100vh; }
-    .mainHistoria p {
-      font-size: 15px;
-      padding: 15px; }
+  .mainHistoria p {
+    font-size: 15px;
+    padding: 15px; }
   /* ESTILOS */
-  .nuestrosEstilos h3 {
-    font-size: 40px; }
+  .nuestrosEstilos {
+    height: 100%; }
   /* CONTACTO */
-  .mainContacto {
-    flex-direction: column;
-    height: 80vh; }
-  .nombreContacto {
-    margin: 20px; } }
+  .iframe {
+    margin: 15px; } }
 
 @media screen and (max-width: 1440px) {
   /* meia query para mobile 425px */ }
 
 @media screen and (max-width: 1440px) and (max-width: 425px) {
+  /* main */
+  .mainInicio {
+    height: 100%; }
   /* historia */
   .mainHistoria p {
     font-size: 13px;
     padding: 15px; }
+  /* ESTILOS */
+  .nuestrosEstilos {
+    height: 100%; }
   /* contacto */
   .iframe {
-    margin: 10px; } }
+    margin: 15px; } }

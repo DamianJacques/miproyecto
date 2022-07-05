@@ -4,6 +4,7 @@
 .mainDelivery {
     background-image: url("../img/la-cerveza-que-representa-a___9tzwwqYTQ_1256x620__1.webp");
     background-size: cover;
+    height: 56vh;
   }
   
   .contenidodelivery {
@@ -12,18 +13,27 @@
     justify-content: center;
     align-items: center;
   
-    h2 {
+    .tituloDelivery {
       font-size: 50px;
       padding: 10px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0.05em 0.05em black;
     }
   
-    h3 {
+    .tituloEntrega {
       font-size: 40px;
       padding: 5px;
+      font-weight: bold;
+      color: black;
+      text-shadow: 0.05em 0.05em white;
     }
   
     h4 {
       font-size: 30px;
       padding-bottom: 100px;
+      font-weight: bold;
+      color: black;
+      text-shadow: 0.05em 0.05em white;
     }
   }

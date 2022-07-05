@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cerveza, estilos, ipa, golden, stout, irish, apa">
     <meta name="description" content="Cerveza H cuenta con variedad de estilos, desde cervezas rubias y ligeras hasta cervezas negras y con alta graduacion">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/ffca4f2593.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/Logo_H-removebg-preview.png">
@@ -15,41 +16,40 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="../index.html">  <img class="h" src="../img/Logo_H-removebg-preview.png" alt="Logo H"> </a>
+    
+        <div class="container-fluid d-flex justify-content-around ">
+            <div class="logo">
+                <a href="../index.html"> <img class="h" src="../img/Logo_H-removebg-preview.png" alt="Logo H"> </a>
+            </div>
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" href="../pages/estilos.html">Estilos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" href="../pages/delivery.html">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
         </div>
-        <nav>
-            <ul class="lista">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="../pages/estilos.html">Estilos</a>
-                </li>
-                <lI>
-                    <a href="../pages/delivery.html">Delivery</a>
-                </lI>
-
-                <lI>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </lI>
-            </ul>
-        </nav>
+        </nav>>
     </header>
-    <main class="mainEstilos">
-        <h3 class="tituloEstilos">Nuestros Estilos</h3>
-        <div class="nuestrosEstilos">
-            
-            <!-- <ul> -->
-                <!-- <li class="e1">Golden c/Naranja</li> -->
-                <!-- <li class="e2">Irish Red</li> -->
-                <!-- <li class="e3">Ipa Red</li> -->
-                <!-- <li class="e4">Dubbel</li> -->
-                <!-- <li class="e5">Imperial Stout</li> -->
-            <!-- </ul> -->
+      <main class="mainEstilos">
+         <div class="nuestrosEstilos">
             <section class="cardDorada">
                 <p>DORADA ALEMANA</p>
                 <div class="infoEstilo">
@@ -58,7 +58,7 @@
             </section>
             <section class="cardGolden">
                 <p>GOLDEN C/NARANJA</p>
-                 <div class="infoEstilo">
+                <div class="infoEstilo">
                     <p>Clasica cerveza con el agregado de cascaras de naranja y jengibre, le da un perfil fresco y citrico</p>
                 </div>
             </section>
@@ -80,21 +80,24 @@
             <section class="cardApa">
                 <p>APA MARACUYA</p>
                 <div class="infoEstilo">
-                    <p>Cerveza refrescante, color dorado intenso y brillante, aromatica con notas a frutas tropicales</p>
+                    <p>Cerveza refrescante, color dorado intenso y brillante, aromatica con notas a frutas tropicales
+                    </p>
                 </div>
             </section>
 
             <section class="cardIpa">
                 <P>IPA RED</P>
                 <div class="infoEstilo">
-                    <p>Cerveza color rojo cobrizo de intenso amargor y sabor citrico, maltas que balancean su sabor y alto aroma frutal</p>
+                    <p>Cerveza color rojo cobrizo de intenso amargor y sabor citrico, maltas que balancean su sabor y
+                        alto aroma frutal</p>
                 </div>
             </section>
 
             <section class="cardDubbel">
                 <p>DUBBEL</p>
                 <div class="infoEstilo">
-                    <p>Cerveza trapense color rojo rubi, notas a caramelo, uvas pasas y cerezas. De bajo amargor y final alicorado</p>
+                    <p>Cerveza trapense color rojo rubi, notas a caramelo, uvas pasas y cerezas. De bajo amargor y final
+                        alicorado</p>
                 </div>
             </section>
 
@@ -104,8 +107,8 @@
                     <p>Cerveza intensa, profunda, compleja, con notas a chocolate amargo, cafe y uvas pasas</p>
                 </div>
             </section>
-        </div>
-    </main>
+        </div>    
+       </main>
 
     <footer>
         <div class="redes">
@@ -139,7 +142,7 @@
             <input type="text" placeholder="ejemplo@email.com">
             <input type="submit" value="Enviar">
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

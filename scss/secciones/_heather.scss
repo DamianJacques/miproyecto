@@ -41,15 +41,11 @@ header {
     }
   }
   
-  .lista li a {
-    color: white;
-    margin: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 5px;
-  
-    &:hover {
-      background-color: white;
-      color: black;
-    }
+  .nav-item a:hover {
+       background-color: gray;
+       color:black;
+       border-radius: 10px;
   }
+  
+ 
+  

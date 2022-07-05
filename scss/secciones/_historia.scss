@@ -9,16 +9,21 @@
     flex-direction: column;
     z-index: 100;
     position: relative;
-  }
-  
-    h2 {
+    height: 100%;
+    gap: 20px;
+    
+    }
+    .historia {
       font-size: 50px;
       color: white;
+      text-shadow: 0.1em 0.1em black;
     }
   
-    p {
-      font-size: 20px;
-      color: white;
+    .parrafoHistoria {
+      font-size: 25px;
+      color: rgb(204, 200, 200);
+      text-shadow: 0.1em 0.1em black;
+      width: 40%;
     }
     video{
       position: absolute;
