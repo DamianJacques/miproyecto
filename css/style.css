@@ -323,10 +323,6 @@ section:hover .infoEstilo {
   /* ESTILOS */
   .nuestrosEstilos li {
     font-size: 25px; }
-  /* delivery */
-  .contenidodelivery {
-    color: white;
-    text-shadow: 0.1em 0.1em black; }
   /* media query para mobile 550px  */ }
 
 @media screen and (max-width: 1440px) and (max-width: 550px) {
@@ -334,10 +330,6 @@ section:hover .infoEstilo {
   /***** heather *****/
   .d-flex {
     flex-direction: column; }
-  .lista {
-    display: flex;
-    flex-direction: column;
-    list-style: none; }
   /***** main *****/
   .mainInicio {
     height: 100%; }
@@ -358,7 +350,7 @@ section:hover .infoEstilo {
     display: flex;
     flex-direction: row; }
   /*HISTORIA*/
-  .mainHistoria p {
+  .parrafoHistoria {
     font-size: 15px;
     padding: 15px; }
   /* ESTILOS */
@@ -376,7 +368,7 @@ section:hover .infoEstilo {
   .mainInicio {
     height: 100%; }
   /* historia */
-  .mainHistoria p {
+  .parrafoHistoria {
     font-size: 13px;
     padding: 15px; }
   /* ESTILOS */
