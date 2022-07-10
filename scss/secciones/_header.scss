@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&family=Satisfy&display=swap");
+
+/* **************header*********** */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.h {
+  @include estilo-img (110px, 10px);
+}
+
+.logo img {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav-item a:hover {
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+}

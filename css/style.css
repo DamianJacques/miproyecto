@@ -8,7 +8,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 20px; }
 
-button:hover, footer i:hover {
+button:hover, footer i:hover, .footer a:hover {
   transform: translateY(2px); }
 
 .cardDorada, .cardGolden, .cardBelgian, .cardIrish, .cardApa, .cardIpa, .cardDubbel, .cardImperial {
@@ -27,25 +27,22 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #222;
-  color: white; }
+  background-color: #222; }
   header .logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    font-size: 25px; }
+    align-items: center; }
 
 .lista {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  font-size: 25px; }
+  list-style: none; }
 
 .h {
-  width: 150px;
+  width: 110px;
   margin: 10px; }
 
 .logo img {
@@ -59,6 +56,9 @@ header {
   border-radius: 10px; }
 
 /* ******main***** */
+.navbar-nav {
+  align-items: center; }
+
 body::-webkit-scrollbar {
   width: 10px; }
 
@@ -133,16 +133,16 @@ button {
 /* *****Footer***** */
 footer {
   background-color: #222;
-  height: 250px;
   display: grid;
-  align-content: space-around;
   justify-content: space-around;
-  grid-template-columns: repeat(3, 1ft);
-  grid-template-areas: "footer redes formFooter"; }
+  align-items: center;
+  grid-template-areas: "footer redes formFooter";
+  margin-top: auto; }
 
 .redes {
   grid-area: redes;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 footer i {
   grid-area: footer;
@@ -155,20 +155,25 @@ footer i {
   font-size: 20px;
   color: white; }
 
-.footer li {
-  font-size: 18px;
-  color: white;
-  list-style: none;
-  margin: 10px; }
-
-.footer li a {
-  display: grid;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  justify-content: center;
-  align-content: center; }
+.footer {
+  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer li {
+    font-size: 18px;
+    color: white;
+    list-style: none;
+    margin-top: 2px; }
+  .footer a {
+    display: grid;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center; }
 
 /* *****historia****** */
 .mainHistoria {
@@ -208,11 +213,6 @@ video {
   display: flex;
   align-items: center;
   min-height: 100vh; }
-  .mainEstilos::-webkit-scrollbar {
-    width: 10px; }
-  .mainEstilos::-webkit-scrollbar-thumb {
-    background-color: black;
-    border-radius: 5px; }
 
 .nuestrosEstilos {
   display: flex;
@@ -220,9 +220,7 @@ video {
   align-items: center;
   flex-wrap: wrap;
   color: #e5e5e5;
-  text-shadow: 0.1em 0.1em black;
-  width: 100%;
-  height: 56vh; }
+  text-shadow: 0.1em 0.1em black; }
 
 .infoEstilo {
   display: none;
@@ -344,20 +342,40 @@ h4 {
     font-size: 40px; }
   .mainHistoria p {
     font-size: 25px;
-    padding: 15px; }
+    padding: 15px;
+    width: 70%; }
   /* ESTILOS */
   .nuestrosEstilos li {
-    font-size: 25px; }
+    font-size: 25px; } }
+
+@media screen and (max-width: 1440px) and (max-width: 720px) {
+  /* main */
+  .card {
+    height: 300px; }
+  .delivery p {
+    font-size: 30px; }
+  .ulEstilos {
+    padding: 5px; }
+  .estilos {
+    align-items: flex-start; }
+    .estilos li {
+      font-size: 20px;
+      padding: 0; }
+    .estilos h3 {
+      font-size: 20px;
+      padding: 10; } }
+
+@media screen and (max-width: 1440px) {
   /* media query para mobile 550px  */ }
 
 @media screen and (max-width: 1440px) and (max-width: 550px) {
   /* INDEX */
-  /***** heather *****/
+  /***** header *****/
   .d-flex {
     flex-direction: column; }
-  /***** main *****/
+  /* main */
   .mainInicio {
-    height: 100%; }
+    flex-direction: column; }
   .card {
     height: 300px; }
   .delivery p {
@@ -369,8 +387,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(1, 1ft);
     grid-template-rows: repeat(3, 1ft);
-    grid-template-areas: "footer" "redes" "formFooter";
-    height: 50vh; }
+    grid-template-areas: "footer" "redes" "formFooter"; }
   .redes {
     display: flex;
     flex-direction: row; }
@@ -378,9 +395,6 @@ h4 {
   .parrafoHistoria {
     font-size: 25px;
     padding: 15px; }
-  /* ESTILOS */
-  .nuestrosEstilos {
-    height: 100%; }
   /* CONTACTO */
   .iframe {
     margin: 15px; } }
@@ -389,16 +403,10 @@ h4 {
   /* meia query para mobile 425px */ }
 
 @media screen and (max-width: 1440px) and (max-width: 425px) {
-  /* main */
-  .mainInicio {
-    height: 100%; }
   /* historia */
   .parrafoHistoria {
     font-size: 25px;
     padding: 15px; }
-  /* ESTILOS */
-  .nuestrosEstilos {
-    height: 100%; }
   /* contacto */
   .iframe {
     margin: 15px; } }

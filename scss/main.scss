@@ -14,7 +14,7 @@
 
 // secciones
 
-@import './secciones/heather';
+@import './secciones/header';
 @import './secciones/main';
 @import './secciones/footer';
 @import './secciones/historia';
@@ -41,6 +41,7 @@
       p {
         font-size: 25px;
         padding: 15px;
+        width: 70%;
       }
     }
   
@@ -53,23 +54,46 @@
     }
   
   
+    @media screen and (max-width: $tablet) {
+      /* main */ 
+      .card {
+        height: 300px;
+      }
+  
+      .delivery p {
+        font-size: 30px;
+      }
+      .ulEstilos{
+        padding: 5px;
+      }
+      .estilos {
+        align-items: flex-start;
+        
+        li {
+          font-size: 20px;
+          padding: 0;
+        }
+        h3{
+          font-size: 20px;
+          padding: 10;
+        }
+      }
+  
+    }
   
     /* media query para mobile 550px  */
   
     @media screen and (max-width: $mobileGrande) {
       /* INDEX */
   
-      /***** heather *****/
+      /***** header *****/
       .d-flex{
         flex-direction: column;
       }
-  
-      
-      /***** main *****/
+      /* main */ 
       .mainInicio{
-         height: 100%;
+        flex-direction: column;
       }
-  
       .card {
         height: 300px;
       }
@@ -91,7 +115,7 @@
         grid-template-columns: repeat(1, 1ft);
         grid-template-rows: repeat(3, 1ft);
         grid-template-areas: "footer" "redes" "formFooter";
-        height: 50vh;
+        // height: 50vh;
       }
   
       .redes {
@@ -106,11 +130,7 @@
           padding: 15px;
       }
     
-      /* ESTILOS */
-  
-      .nuestrosEstilos {
-        height: 100%;
-      }
+     
   
       /* CONTACTO */
       .iframe {
@@ -122,24 +142,14 @@
     /* meia query para mobile 425px */
     @media screen and (max-width: $mobileChico) {
 
-      /* main */ 
-      .mainInicio{
-        height: 100%;
-      }
-
       /* historia */
   
       .parrafoHistoria {
         font-size: 25px;
         padding: 15px;
       }
-    /* ESTILOS */
-  
-    .nuestrosEstilos {
-      height: 100%;
-    }
+   
       /* contacto */
-  
       .iframe {
         margin: 15px;
       }

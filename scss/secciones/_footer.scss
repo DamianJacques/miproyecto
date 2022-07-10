@@ -3,16 +3,16 @@
 
 footer {
     background-color: #222;
-    height: 250px;
     display: grid;
-    align-content: space-around;
     justify-content: space-around;
-    grid-template-columns: repeat(3, 1ft);
+    align-items: center;
     grid-template-areas: "footer redes formFooter";
+    margin-top: auto;
   }
   .redes {
     grid-area: redes;
     display: flex;
+    justify-content: center;
   }
   footer i {
     grid-area: footer;
@@ -28,19 +28,29 @@ footer {
   footer i:hover {
     @extend %hover;
   }
-  
-  .footer li {
+  .footer{
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        li {
     font-size: 18px;
     color: white;
     list-style: none;
-    margin: 10px;
-  }
-  .footer li a {
-    display: grid;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    justify-content: center;
-    align-content: center;
+    margin-top: 2px;
+        }
+    
+  a {
+      display: grid;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      justify-content: center;
+      align-content: center;
+    }
+    & a:hover {
+      @extend %hover;
+    }
   }
