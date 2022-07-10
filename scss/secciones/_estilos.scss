@@ -2,6 +2,16 @@
 .mainEstilos {
   background-image: url("../img/tipos-cerveza-artesana-thegem-blog-default.png");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  &::-webkit-scrollbar{
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
+  }
  
 }
 
