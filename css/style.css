@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px; }
 
 .mainInicio {
-  background-image: url(../img/fondoCards.jpg);
+  background-image: url(../img/fondoCard.jpg);
   background-size: cover;
   display: flex;
   justify-content: space-evenly;
